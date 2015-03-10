@@ -96,7 +96,7 @@ module.exports = Harvest = function (opts) {
                 data = {};
             }
 
-            if (res.headers['location'] && res.header['location'].split('/')[1] === 'clients')  {
+            if (res.headers['location'] && res.headers['location'].split('/')[1] === 'clients')  {
                 err = null;
                 data = res.headers['location'].split('/')[2];
             }
